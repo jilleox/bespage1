@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Ratio </title>
+<style>
+
+body {
+	background-image: url("background.png");
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.topnav {
+  background-image: linear-gradient(to right, #000000 , #737373);
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #737373;
+  color: white;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+div.gallery {
+  border: 2px solid #ccc;
+  background-image: linear-gradient(to right, #000000 , #737373);
+  font-family: arial;
+  color:white;
+}
+
+div.gallery:hover {
+  border: 1px solid #000000;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+#responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+        .row {
+            display: inline-flex;
+            flex-wrap: wrap; /* Allows cards to wrap to the next line */
+            margin: 15px 0;
+        }
+
+        .column {
+            flex: 1; /* Distribute available space equally */
+            max-width: calc(100% / 7); /* 7 columns per row */
+            padding: 0 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column; /* Stack image and content vertically */
+            height: 100%; /* Make cards fill the available height */
+			background-image: url("cardg.png");
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            padding: 0 16px;
+            flex-grow: 1; /* Allow container to grow and fill remaining space */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Distribute space between elements inside container */
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        @media screen and (max-width: 1000px) { /* Adjust breakpoint as needed */
+            .column {
+                max-width: calc(100% / 3); /* Adjust for smaller screens */
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .column {
+                max-width: 100%; /* One column per row on very small screens */
+            }
+        }
+
+		body {
+			font-family: arial;
+			
+		}
+		
+		.card:hover {
+  border: 1px solid #000000;
+}
+
+	
+.abr {
+	margin: 15px 0;
+    text-align: center; /* Center the "Members" text */
+    width: 100%; /* Make it span the full width */
+    display: block; /* Ensure it's a block-level element */
+        } 
+		
+iframe {
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  
+  }
+  
+  .container {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto; /* Center it */
+}
+
+.container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  width: 94%; 
+  padding: 20px;
+}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+<link rel="icon" href="groan.png" type="image/x-icon"/>
+</head>
+<body>
+
+<div class="topnav" style = "font-family:arial;">
+  <a class="active" href="index.html">Home</a>
+  <a href="#news">Songs</a>
+  <a href="#responsive">About</a>
+  <a href="store.html">Store</a> 
+ 
+</div>
+
+<img src = "analogytoratio.png" width = "500" height = "400" class = "ratio">
+
+<br>
+
+<div class="container">
+  <img src="variable.png" style="width:100%;">
+  <div class="content">
+    <h1>VARIABLE - Ratio</h1>
+    <p>Ratio's first ever released album. Songs available to listen to on Youtube!</p>
+  </div>
+</div>
+
+<br>
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nUA-Q6Z1ano?si=qnZz0yf3AzVEeC2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QV41U7kVPwM?si=kwT12krCb0Ps22vN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1c6oFSfW_0g?si=8XDJtUBkfw3n7T7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SNS_v6B4dsk?si=q7K_I2xvM4lvW5G_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Mr-v1z8nnIc?si=1nqVmGd3iYinbvt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eYUC_BJTUK4?si=Vd6KD2ZZcqQOD7tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+<br>
+
+
+
+</body>
+</body>

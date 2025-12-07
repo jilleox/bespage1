@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Ratio </title>
+    <style>
+        body {
+            background-image: url("background.png");
+            font-family: arial;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+        }
+
+        .topnav {
+            background-image: linear-gradient(to right, #000000, #737373);
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #737373;
+            color: white;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        div.gallery {
+            border: 2px solid #ccc;
+            background-image: linear-gradient(to right, #000000, #737373);
+            color: white;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #000000;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 15px 0;
+        }
+
+        .column {
+            flex: 1;
+            max-width: calc(100% / 7);
+            padding: 0 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background-image: url("cardg.png");
+        }
+
+        .card:hover {
+            border: 1px solid #000000;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            padding: 0 16px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .column {
+                max-width: calc(100% / 3);
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .column {
+                max-width: 100%;
+            }
+        }
+
+        .abr {
+            margin: 15px 0;
+            text-align: center; /* Center the "Members" text */
+            width: 100%; /* Make it span the full width */
+            display: block; /* Ensure it's a block-level element */
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="groan.png" type="image/x-icon" />
+</head>
+<body>
+    <div class="topnav" style="font-family:arial;">
+        <a class="active" href="index.html">Home</a>
+        <a href="#news">Songs</a>
+        <a href="#contact">About</a>
+        <a href="store.html">Store</a>
+        <a href="#">Socials</a>
+    </div>
+
+    <img src="analogytoratio.png" width="500" height="400" class="ratio">
+
+    <div class="clearfix">
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="nanablast.png">
+                    <img src="nanablast.png">
+                </a>
+                <div class="desc">WHO ARE WE?
+                    We are a 7-member band called "Ratio", we create songs under the genre industrial, rock, metal and such! Scroll down to see our members and our <a href="#songs" style="color:white;">songs!</a></div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="blastnana.png">
+                    <img src="blastnana.png">
+                </a>
+                <div class="desc">WHEN WERE WE? Our band started creating songs on February 19, 2025, our first album being published on early March 2025!</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="blackstones.png">
+                    <img src="blackstones.png">
+                </a>
+                <div class="desc">WHERE ARE WE? We are at the Philippines! Most of our members are from Malolos, Bulacan.</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="threestones.png">
+                    <img src="threestones.png">
+                </a>
+                <div class="desc">WHY ARE WE? Because once talents unite together, they will show the world what an unbeatable force is!</div>
+            </div>
+        </div>
+    </div>
+
+    <p class="abr">Members</p>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="1.png" alt="Jane">
+                <div class="container">
+                    <h2>Jamia</h2>
+                    <p class="title">Singer & Songwriter</p>
+                    <p>FEEL IT. She is one of the vocalists and the songwriter for Ratio.</p>
+                    <p style="color:grey;">Click the button below to get to know her.</p>
+                    <p><button class="button">Learn More</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="2.png" alt="Mike">
+                <div class="container">
+                    <h2>Stephen</h2>
+                    <p class="title">Drummer</p>
+                    <p>GREED FOR BEAT. He is the drummer for Ratio.</p>
+                    <p style="color:grey;">Click the button below to get to know him.</p>
+                    <p><button class="button">Learn More</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="3.png" alt="John">
+                <div class="container">
+                    <h2>Jemimah</h2>
+                    <p class="title">Singer</p>
+                    <p>STRANDED PATH. She is one of the vocalists for Ratio.</p>
+                    <p style="color:
+					color:grey;">Click the button below to get to know her.</p>
+                    <p><button class="button">Learn More</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="4.png" alt="John">
+                <div class="container">
+                    <h2>Criz</h2>
+                    <p class="title">Guitarist</p>
+                    <p>ENCEPHALOPATHY. He is the guitarist for Ratio.</p>
+                    <p style="color:grey;">Click the button below to get to know him.</p>
+                    <p><button class="button">Learn More</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="5.png" alt="John">
+                <div class="container">
+                    <h2>Jelo</h2>
+                    <p class="title">Singer</p>
+                    <p>CALL FOR ALL. He is one of the vocalists for Ratio.</p>
+                    <p style="color:grey;">Click the button below to get to know him.</p>
+                    <p><button class="button">Learn More</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="6.png" alt="John">
+                <div class="container">
+                    <h2>Lady</h2>
+                    <p class="title">Pianist</p>
+                    <p>DESECRATED FACE. She is the pianist for Ratio.</p>
+                    <p style="color:grey;">Click the button below to get to know her.</p>
+                    <p><button class="button">Learn More</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="7.png" alt="John">
+                <div class="container">
+                    <h2>Yvonne</h2>
+                    <p class="title">Bassist</p>
+                    <p>HOMES AMONG HOLES. She is the bassist for Ratio.</p>
+                    <p style="color:grey;">Click the button below to get to know her.</p>
+                    <p><button class="button">Learn More</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
